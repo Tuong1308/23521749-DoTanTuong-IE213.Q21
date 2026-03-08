@@ -98,7 +98,7 @@ Sau đó thực hiện các lệnh CRUD theo yêu cầu của bài thực hành.
 Kết quả được minh họa bằng hình ảnh trong thư mục:
 
 ```
-lab01/screenshots
+lab01/screenshot-lab01
 ```
 
 ---
