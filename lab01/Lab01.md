@@ -36,7 +36,7 @@
 
 **Kết quả**
 
-![MongoDB Compass](../lab01/screenshots/Lab1_B1_1.2.png)
+![MongoDB Compass](../lab01/screenshot-lab01/Lab1_B1_1.2.png)
 
 ### Bài 2: MongoDB CRUD Operation
 
@@ -44,7 +44,7 @@
 
 **Kết quả**
 
-![Create Database](../lab01/screenshots/Lab1_B2_2.1.png)
+![Create Database](../lab01/screenshot-lab01/Lab1_B2_2.1.png)
 
 #### 2.2 Thêm các document vào collection employees
 
@@ -60,7 +60,7 @@ db.employees.insertMany([
 
 **Kết quả**
 
-![Insert Documents](../lab01/screenshots/Lab1_B2_2.2.png)
+![Insert Documents](../lab01/screenshot-lab01/Lab1_B2_2.2.png)
 
 #### 2.3 Tạo unique index cho trường id
 
@@ -71,7 +71,7 @@ db.employees.createIndex({ id: 1 }, { unique: true })
 
 **Kết quả**
 
-![Unique Index](../lab01/screenshots/Lab1_B2_2.3.png)
+![Unique Index](../lab01/screenshot-lab01/Lab1_B2_2.3.png)
 
 #### 2.4 Tìm nhân viên John Doe
 
@@ -85,7 +85,7 @@ db.employees.find({
 
 **Kết quả**
 
-![Find John Doe](../lab01/screenshots/Lab1_B2_2.4.png)
+![Find John Doe](../lab01/screenshot-lab01/Lab1_B2_2.4.png)
 
 #### 2.5 Tìm nhân viên có tuổi trên 30 và dưới 60
 
@@ -101,7 +101,7 @@ db.employees.find({
 
 **Kết quả**
 
-![Find Age Range](../lab01/screenshots/Lab1_B2_2.5.png)
+![Find Age Range](../lab01/screenshot-lab01/Lab1_B2_2.5.png)
 
 #### 2.6 Thêm document có middle name
 
@@ -122,8 +122,8 @@ db.employees.find({
 
 **Kết quả**
 
-![Add user](../lab01/screenshots/Lab1_B2_2.6.1.png)
-![Find Middle Name](../lab01/screenshots/Lab1_B2_2.6.1.png)
+![Add user](../lab01/screenshot-lab01/Lab1_B2_2.6.1.png)
+![Find Middle Name](../lab01/screenshot-lab01/Lab1_B2_2.6.1.png)
 
 
 #### 2.7 Xóa trường middle name
@@ -138,7 +138,7 @@ db.employees.updateMany(
 
 **Kết quả**
 
-![Remove Middle Name](../lab01/screenshots/Lab1_B2_2.7.png)
+![Remove Middle Name](../lab01/screenshot-lab01/Lab1_B2_2.7.png)
 
 #### 2.8 Thêm trường organization
 
@@ -152,7 +152,7 @@ db.employees.updateMany(
 
 **Kết quả**
 
-![Add Organization](../lab01/screenshots/Lab1_B2_2.8.png)
+![Add Organization](../lab01/screenshot-lab01/Lab1_B2_2.8.png)
 
 #### 2.9 Cập nhật organization của id 5 và 6
 
@@ -166,7 +166,7 @@ db.employees.updateMany(
 
 **Kết quả**
 
-![Update Organization](../lab01/screenshots/Lab1_B2_2.9.png)
+![Update Organization](../lab01/screenshot-lab01/Lab1_B2_2.9.png)
 
 #### 2.10 Tính tổng tuổi và tuổi trung bình theo organization
 
@@ -185,6 +185,6 @@ db.employees.aggregate([
 
 **Kết quả**
 
-![Aggregate Result](../lab01/screenshots/Lab1_B2_2.10.png)
+![Aggregate Result](../lab01/screenshot-lab01/Lab1_B2_2.10.png)
 
 ---
