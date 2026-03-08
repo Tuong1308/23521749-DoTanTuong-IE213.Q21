@@ -8,7 +8,7 @@
 * Lớp: IE213.Q21.1
 
 ---
-## Mục tiêu
+## Mục tiêu Lab01
 * Làm quen với MongoDB Atlas
 * Kết nối MongoDB Atlas với MongoDB Compass
 * Thực hiện các thao tác CRUD bằng mongosh
