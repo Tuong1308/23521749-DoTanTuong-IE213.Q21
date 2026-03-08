@@ -122,7 +122,9 @@ db.employees.find({
 
 **Kết quả**
 
-![Find Middle Name](../lab01/screenshots/Lab1_B2_2.6.png)
+![Add user](../lab01/screenshots/Lab1_B2_2.6.1.png)
+![Find Middle Name](../lab01/screenshots/Lab1_B2_2.6.1.png)
+
 
 #### 2.7 Xóa trường middle name
 
