@@ -110,12 +110,12 @@ Các hình ảnh minh chứng kết quả thực hiện được lưu trong thư
 Cấu trúc thư mục:
 
 ```
-lab01/screenshots
-lab02/screenshots
-lab03/screenshots
-lab04/screenshots
-lab05/screenshots
-lab06/screenshots
+lab01/screenshot-lab01
+lab02/screenshot-lab02
+lab03/screenshot-lab03
+lab04/screenshot-lab04
+lab05/screenshot-lab05
+lab06/screenshot-lab06
 ```
 
 ---
