@@ -95,7 +95,7 @@ lab02
 
 [.env]
 
-![2.2](../lab02/screenshots/Lab2_B2_2.2.png)
+![2.2](../lab02/screenshot-lab02/Lab2_B2_2.2.png)
 
 
 #### 2.3 Tạo tệp tin index.js
@@ -104,7 +104,7 @@ lab02
 
 [index.js](../lab02/movie-reviews/backend/index.js)
 
-![2.3](../lab02/screenshots/Lab2_B2_2.3.png)
+![2.3](../lab02/screenshot-lab02/Lab2_B2_2.3.png)
 
 
 #### 2.4 Tạo tệp tin movies.route.js
@@ -113,7 +113,7 @@ lab02
 
 [movies.route.js](../lab02/movie-reviews/backend/api/movies.route.js)
 
-![2.4](../lab02/screenshots/Lab2_B2_2.4.png)
+![2.4](../lab02/screenshot-lab02/Lab2_B2_2.4.png)
 
 
 #### 2.5 Tạo tệp tin moviesDAO.js
@@ -122,7 +122,7 @@ lab02
 
 [moviesDAO.js](../lab02/movie-reviews/backend/dao/moviesDAO.js)
 
-![2.5](../lab02/screenshots/Lab2_B2_2.5.png)
+![2.5](../lab02/screenshot-lab02/Lab2_B2_2.5.png)
 
 
 #### 2.6 Tạo tệp tin movies.controller.js
@@ -131,7 +131,7 @@ lab02
 
 [movies.controller](../lab02/movie-reviews/backend/api/movies.controller.js)
 
-![2.6](../lab02/screenshots/Lab2_B2_2.6.png)
+![2.6](../lab02/screenshot-lab02/Lab2_B2_2.6.png)
 
 
 #### 2.7 Đưa Controller vừa tạo ở yêu cầu 2.6 vào định tuyến
@@ -140,14 +140,14 @@ lab02
 
 * Chỉnh sửa lại tiệp tin movies.route.js : Thêm apiGetMovies
 
-    ![2.7.1](../lab02/screenshots/Lab2_B2_2.7.1.png)
+    ![2.7.1](../lab02/screenshot-lab02/Lab2_B2_2.7.1.png)
 
 * Chạy lệnh npm start
 
-    ![2.7.2](../lab02/screenshots/Lab2_B2_2.7.2.png)
+    ![2.7.2](../lab02/screenshot-lab02/Lab2_B2_2.7.2.png)
 
 **Kết quả**
 
 * Truy cập localhost:3000/api/v1/movies/
 
-    ![2.7.3](../lab02/screenshots/Lab2_B2_2.7.3.png)
+    ![2.7.3](../lab02/screenshot-lab02/Lab2_B2_2.7.3.png)
