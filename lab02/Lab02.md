@@ -2,7 +2,7 @@
 
 ---
 ## Thông tin sinh viên
-* Họ tên: Đỗ Tán Tường
+* Họ tên: Đỗ Tấn Tường
 * MSSV: 23521749
 * Môn học: IE213.Q21 – Kỹ thuật phát triển hệ thống Web
 * Lớp: IE213.Q21.1
