@@ -53,7 +53,22 @@ Thư mục:
 lab01/
 ```
 
-## Lab02 
+
+## Lab02 – Thiết lập Backend với NodeJS và ExpressJS
+
+Nội dung chính:
+
+* Thiết lập môi trường NodeJS
+* Xây dựng server với ExpressJS
+* Kết nối MongoDB Atlas
+* Tổ chức project theo mô hình DAO – Controller – Route
+* Xây dựng API `/api/v1/movies`
+
+Thư mục:
+
+```
+lab02/
+```
 
 ## Lab03 
 
@@ -82,6 +97,13 @@ use MSSV-ie213
 
 Sau đó thực hiện các lệnh CRUD theo yêu cầu của bài thực hành.
 
+Đối với Lab02:
+
+1. Di chuyển vào thư mục backend  cd lab02/movie-reviews/backend
+2. Cài đặt dependency npm install
+3. Chạy server npm start
+4. Truy cập API http://localhost:3000/api/v1/movies
+
 ---
 
 # 6. Kết quả thực hiện
@@ -99,6 +121,19 @@ Kết quả được minh họa bằng hình ảnh trong thư mục:
 
 ```
 lab01/screenshot-lab01
+```
+Đã thực hiện thành công các yêu cầu của Lab02:
+
+* Thiết lập môi trường NodeJS
+* Cài đặt ExpressJS và MongoDB
+* Xây dựng server backend
+* Thiết lập API `/api/v1/movies`
+* Kết nối MongoDB Atlas
+
+Kết quả được minh họa bằng hình ảnh trong thư mục:
+
+```
+lab02/screenshot-lab02
 ```
 
 ---
@@ -128,11 +163,16 @@ Lab01: Hoàn thành
 * Thực hiện CRUD Operation ✔
 * Viết tài liệu và README cho Lab01 ✔
 
+Lab02: Hoàn thành
+* Thiết lập môi trường NodeJS ✔
+* Xây dựng backend với ExpressJS ✔
+* Kết nối MongoDB Atlas ✔
+* Xây dựng API `/api/v1/movies` ✔
+
 ---
 
 # 9. Nội dung chưa hoàn thành
 
-Lab02<br>
 Lab03<br>
 Lab04<br>
 Lab05<br>
@@ -148,9 +188,13 @@ Các nội dung này sẽ được cập nhật trong quá trình thực hiện 
 * Visual Studio Code
 * MongoDB Atlas
 * MongoDB Compass
+* NodeJS
+* ExpressJS
 
 ## Công cụ hỗ trợ (AI)
 * ChatGPT
+* Claude Code
+
 
 ### Mục đích sử dụng AI 
 
@@ -163,6 +207,10 @@ Các nội dung này sẽ được cập nhật trong quá trình thực hiện 
 Lab01:
 * Hướng dẫn cấu trúc README
 * Giải thích các lệnh MongoDB
+
+Lab02: 
+  * Hỗ trợ quá trình thực hiện và debug các file code 
+  * Giải thích 1 số đoạn code và chỉ ra flow hoạt động
 
 ---
 
