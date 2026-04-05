@@ -25,7 +25,7 @@
 * Insomnia
 
 ---
-## Cấu trúc thư mục bài thực hành 2
+## Cấu trúc thư mục bài thực hành 3
 ```text
 lab03
 ├── movie-reviews/
