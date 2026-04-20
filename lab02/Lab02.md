@@ -1,19 +1,18 @@
-# LAB02 – Thiết lập Backend với NodeJS và ExpressJS
+# LAB03 – Hoàn thiện Backend cho ứng dụng minh họa
 
 ---
 ## Thông tin sinh viên
 * Họ tên: Đỗ Tấn Tường
-* MSSV: 23521749
+* MSSV: 23521505
 * Môn học: IE213.Q21 – Kỹ thuật phát triển hệ thống Web
 * Lớp: IE213.Q21.1
 
 ---
 ## Mục tiêu
-* Thiết lập môi trường NodeJS để phát triển backend
-* Xây dựng server với ExpressJS
-* Kết nối MongoDB Atlas
-* Tổ chức project theo mô hình DAO – Controller – Route
-* Xây dựng API /api/v1/movies để truy xuất dữ liệu movies
+* Xây dựng chức năng Review cho ứng dụng
+* Hoàn thiện backend với mô hình DAO – Controller – Route
+* Thực hiện các thao tác CRUD cho review
+* Xây dựng các API nâng cao cho movies
 
 ---
 ## Công cụ sử dụng
@@ -23,131 +22,120 @@
 * MongoDB Compass
 * VS Code
 * AI(ChatGPT , ClaudeCode)
+* Insomnia
 
 ---
 ## Cấu trúc thư mục bài thực hành 2
 ```text
-lab02
+lab03
 ├── movie-reviews/
 │   └── backend/
 │       ├── api/
 │       │   ├── movies.controller.js
-│       │   └── movies.route.js
+│       │   ├── movies.route.js
+│       │   └── reviews.controller.js
 │       ├── dao/
-│       │   └── moviesDAO.js
-│       ├── node_modules/
-│       ├── .env
+│       │   ├── moviesDAO.js
+│       │   └── reviewsDAO.js
 │       ├── index.js
-│       ├── package.json
-│       ├── package-lock.json
-│       └── server.js
-├── screenshot-lab02/
-└── Lab02.md
+│       ├── server.js
+│       └── package.json
+├── screenshots/
+└── Lab03.md
 ```
 
 ---
 ## Thực hiện
-### Bài 1: Thiết lập môi trường
-
-#### 1.1 Tải và cài đặt nodejs 
+### Bài 1: Thiết lập định tuyến cho các thao tác với review (Post/Update/Delete)
 
 **Kết quả**
 
-![1.1](../lab02/screenshot-lab02/Lab2_B1_1.1.png)
+[movies.route.js](./movie-reviews/backend/api/movies.route.js)
+
+![1](../lab03/screenshots/Lab3_B1.png)
 
 
-#### 1.2 Khởi tạo cây thư mục chứa mã nguồn của dự án: movie-reviews/backend
+### Bài 2: Thiết lập Controller cho review.
 
-**Kết quả**
-
-![1.2.1](../lab02/screenshot-lab02/Lab2_B1_1.2.1.png)
-![1.2.2](../lab02/screenshot-lab02/Lab2_B1_1.2.2.png)
-
-
-#### 1.3 Khởi tạo dự án với câu lệnh npm init & cài đặt một số dependency của dự án như mongodb, express, cors, dotenv
-
-**Kết quả** 
-
-![1.3](../lab02/screenshot-lab02/Lab2_B1_1.3.png)
-
-
-#### 1.4 Cài đặt nodemon
-
-**Kết quả** 
-
-![1.4](../lab02/screenshot-lab02/Lab2_B1_1.4.png)
-
-
-### Bài 2: Xây dựng Backend
-
-#### 2.1 Tạo tệp tin server.js
+Tạo tệp tin reviews.controller.js để quản lý các yêu cầu có liên quan đến review từ người dùng gửi lên từ máy khách bao gồm các function:<br>
+apiPostReview()<br>
+apiUpdateReview()<br>
+apiDeleteReview()
 
 **Kết quả**
 
-[server.js](./movie-reviews/backend/server.js)
+[reviews.controller.js](./movie-reviews/backend/api/reviews.controller.js)
 
-![2.1](../lab02/screenshot-lab02/Lab2_B2_2.1.png)
-
-
-#### 2.2 Tạo tệp tin .env
-
-**Kết quả**
-
-[.env]
-
-![2.2](../lab02/screenshot-lab02/Lab2_B2_2.2.png)
+![2](../lab03/screenshots/Lab3_B2.png)
 
 
-#### 2.3 Tạo tệp tin index.js
+### Bài 3: Thiết lập DAO cho reviews.
+
+#### 3.1 Trong thư mục DAO tạo tệp tin reviewsDAO.js.
+DAO dùng để thao tác với database MongoDB bao gồm các function:<br>
+addReview()<br>
+updateReview()<br>
+deleteReview()
 
 **Kết quả**
 
-[index.js](../lab02/movie-reviews/backend/index.js)
+[reviewsDAO.js](./movie-reviews/backend/dao/reviewsDAO.js)
 
-![2.3](../lab02/screenshot-lab02/Lab2_B2_2.3.png)
+![3.1](../lab03/screenshots/Lab3_B3.1.png)
 
-
-#### 2.4 Tạo tệp tin movies.route.js
-
-**Kết quả**
-
-[movies.route.js](../lab02/movie-reviews/backend/api/movies.route.js)
-
-![2.4](../lab02/screenshot-lab02/Lab2_B2_2.4.png)
-
-
-#### 2.5 Tạo tệp tin moviesDAO.js
+#### 3.2 Thử nghiệm các API bằng phần mềm hỗ trợ Insomnia
 
 **Kết quả**
 
-[moviesDAO.js](../lab02/movie-reviews/backend/dao/moviesDAO.js)
+Thêm dữ liệu
 
-![2.5](../lab02/screenshot-lab02/Lab2_B2_2.5.png)
+![3.2.1](../lab03/screenshots/Lab3_B3.2.1.png)
+
+Sửa dữ liệu
+
+![3.2.2](../lab03/screenshots/Lab3_B3.2.2.png)
+
+Xóa dữ liệu
+
+![3.2.3](../lab03/screenshots/Lab3_B3.2.3.png)
 
 
-#### 2.6 Tạo tệp tin movies.controller.js
 
-**Kết quả**
+### Bài 4: Hoàn thành back-end cho ứng dụng minh họa.
 
-[movies.controller](../lab02/movie-reviews/backend/api/movies.controller.js)
-
-![2.6](../lab02/screenshot-lab02/Lab2_B2_2.6.png)
-
-
-#### 2.7 Đưa Controller vừa tạo ở yêu cầu 2.6 vào định tuyến
-
-**Thực hiện**
-
-* Chỉnh sửa lại tiệp tin movies.route.js : Thêm apiGetMovies
-
-    ![2.7.1](../lab02/screenshot-lab02/Lab2_B2_2.7.1.png)
-
-* Chạy lệnh npm start
-
-    ![2.7.2](../lab02/screenshot-lab02/Lab2_B2_2.7.2.png)
+#### 4.1 Thêm 2 định tuyến 
 
 **Kết quả**
 
-* Truy cập localhost:3000/api/v1/movies/
+[movies.route.js](./movie-reviews/backend/api/movies.route.js)
 
-    ![2.7.3](../lab02/screenshot-lab02/Lab2_B2_2.7.3.png)
+![4.1](../lab03/screenshots/Lab3_B4.1.png)
+
+#### 4.2 Thêm 2 phương thức apiGetMovieById() và apiGetRatings() trong movie controller.
+
+**Kết quả**
+
+[movies.controller.js](./movie-reviews/backend/api/reviews.controller.js)
+
+![4.2](../lab03/screenshots/Lab3_B4.2.png)
+
+
+#### 4.3 Thêm 2 phương thức DAO getRatings() và getMovieById() trong dao movie.
+
+**Kết quả**
+
+[moviesDAO.js](./movie-reviews/backend/dao/moviesDAO.js)
+
+![4.3](../lab03/screenshots/Lab3_B4.3.png)
+
+#### 4.4 Thử nghiệm các API bằng phần mềm hỗ trợ Insomnia
+
+**Kết quả**
+
+Lấy theo ratings 
+
+![4.4.1](../lab03/screenshots/Lab3_B4.4.1.png)
+
+Lấy theo id 
+
+![4.4.2](../lab03/screenshots/Lab3_B4.4.2.png)
