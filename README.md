@@ -104,7 +104,17 @@ lab04/
 ```
 
 ## Lab05 
-
+Nội dung chính:
+ 
+* Kết nối frontend tới backend qua `axios`
+* Tạo lớp dịch vụ `MovieDataService` trong `src/services/movies.js`
+* Xây dựng `MoviesList` component: hiển thị danh sách phim, tìm kiếm theo title và rating
+* Xây dựng `Movie` component: hiển thị chi tiết phim và danh sách review
+* Sử dụng `useState()` và `useEffect()` hooks
+* Định dạng thời gian với `moment.js`
+Thư mục: `lab05/`
+ 
+---
 ## Lab06 
 
 ---
@@ -154,6 +164,23 @@ GET http://localhost:3000/api/v1/movies/id/573a1390f29313caabcd446f
 3. Chạy ứng dụng npm start
 4. Truy cập giao diện http://localhost:3000
 
+---
+
+Đối với Lab05:
+ 
+
+  Terminal 1 — Backend (Lab03)
+  1. Di chuyển vào thư mục backend cd lab05/movie-reviews/backend
+  2. Cài đặt dependency npm install
+  3. Chạy ứng dụng npm start
+ 
+  Terminal 2 — Frontend (Lab05)
+  1. Di chuyển vào thư mục frontend  cd lab05/movie-reviews/frontend
+  2. Cài đặt dependency npm install
+  3. Chạy ứng dụng npm start
+  4. Truy cập giao diện http://localhost:3000
+
+ 
 ---
 
 # 6. Kết quả thực hiện
@@ -211,7 +238,19 @@ Kết quả được minh họa bằng hình ảnh trong thư mục:
 ```
 lab04/screenshot-lab04
 ```
-
+Đã thực hiện thành công các yêu cầu của Lab05:
+ 
+* Kết nối frontend tới backend với `axios`
+* Tạo lớp dịch vụ `MovieDataService`
+* Xây dựng `MoviesList` component với tìm kiếm theo title và rating
+* Xây dựng `Movie` component hiển thị chi tiết phim và review
+* Hiển thị danh sách review với định dạng thời gian bằng `moment.js`
+ 
+Kết quả được minh họa bằng hình ảnh trong thư mục:
+ 
+```
+lab05/screenshot-lab05
+```
 ---
 
 # 7. Hình ảnh minh họa
@@ -257,12 +296,17 @@ Lab04: Hoàn thành
 * Tạo các component cần thiết ✔
 * Thiết lập định tuyến với React Router DOM ✔
 
+Lab05: Hoàn thành
+* Kết nối frontend tới backend với axios ✔
+* Tạo lớp dịch vụ `MovieDataService` ✔
+* Xây dựng `MoviesList` component ✔
+* Xây dựng `Movie` component ✔
+* Hiển thị review với `moment.js` ✔
 
 ---
 
 # 9. Nội dung chưa hoàn thành
 
-Lab05<br>
 Lab06<br>
 
 Các nội dung này sẽ được cập nhật trong quá trình thực hiện các bài thực hành tiếp theo.
@@ -315,6 +359,9 @@ Lab04:
   * Debug lỗi trong quá trình cài đặt package và cấu hình định tuyến
   * Hỗ trợ tích hợp React-Bootstrap vào dự án  
 
+Lab05:
+  * Giải thích cách hoạt động của `useState()` và `useEffect()`
+  * Debug lỗi kết nối frontend – backend (CORS, endpoint)
 ---
 
 Đỗ Tấn Tường  
