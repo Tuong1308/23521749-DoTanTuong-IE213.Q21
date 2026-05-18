@@ -115,8 +115,17 @@ Nội dung chính:
 Thư mục: `lab05/`
  
 ---
-## Lab06 
-
+## Lab06 – Xây dựng Frontend với ReactJS (tiếp theo Lab05)
+ 
+Nội dung chính:
+ 
+* Xây dựng Login component và xử lý xác thực người dùng
+* Thêm review mới qua `AddReview` component
+* Sửa review hiện có (chế độ editing)
+* Xoá review với cập nhật state trực tiếp trên frontend
+* Phân trang danh sách phim với `getAll(currentPage)`
+* Phân trang kết hợp tìm kiếm theo title và rating với `currentSearchMode`
+Thư mục:
 ---
 
 # 5. Cách chạy chương trình
@@ -180,6 +189,21 @@ GET http://localhost:3000/api/v1/movies/id/573a1390f29313caabcd446f
   3. Chạy ứng dụng npm start
   4. Truy cập giao diện http://localhost:3000
 
+---
+
+Đối với Lab06:
+ 
+
+  Terminal 1 — Backend (Lab06)
+  1. Di chuyển vào thư mục backend cd lab06/movie-reviews/backend
+  2. Cài đặt dependency npm install
+  3. Chạy ứng dụng npm start
+ 
+  Terminal 2 — Frontend (Lab06)
+  1. Di chuyển vào thư mục frontend  cd lab06/movie-reviews/frontend
+  2. Cài đặt dependency npm install
+  3. Chạy ứng dụng npm start
+  4. Truy cập giao diện http://localhost:3001
  
 ---
 
@@ -251,6 +275,20 @@ Kết quả được minh họa bằng hình ảnh trong thư mục:
 ```
 lab05/screenshot-lab05
 ```
+Đã thực hiện thành công các yêu cầu của Lab06:
+ 
+* Xây dựng Login component, redirect về Home sau khi đăng nhập
+* Thêm review mới qua `AddReview` component với `saveReview()`
+* Sửa review: truyền `currentReview` qua `location.state`, gọi `updateReview()`
+* Xoá review: gọi `deleteReview()` rồi dùng `splice()` cập nhật state
+* Phân trang với `currentPage` và `entriesPerPage`
+* Phân trang kết hợp tìm kiếm: quản lý `currentSearchMode` để gọi đúng hàm
+ 
+Kết quả được minh họa bằng hình ảnh trong thư mục:
+ 
+```
+lab06/screenshots
+```
 ---
 
 # 7. Hình ảnh minh họa
@@ -303,6 +341,13 @@ Lab05: Hoàn thành
 * Xây dựng `Movie` component ✔
 * Hiển thị review với `moment.js` ✔
 
+Lab06: Hoàn thành
+* Xây dựng Login component ✔
+* Thêm review mới (AddReview) ✔
+* Sửa review (chế độ editing) ✔
+* Xoá review ✔
+* Phân trang danh sách phim ✔
+* Phân trang kết hợp tìm kiếm theo title và rating ✔
 ---
 
 # 9. Nội dung chưa hoàn thành
@@ -362,6 +407,11 @@ Lab04:
 Lab05:
   * Giải thích cách hoạt động của `useState()` và `useEffect()`
   * Debug lỗi kết nối frontend – backend (CORS, endpoint)
+
+Lab06:
+  * Giải thích cách truyền state qua `useNavigate()` và `location.state`
+  * Hỗ trợ xử lý logic phân trang kết hợp với `currentSearchMode`
+  * Debug lỗi khi xoá review và cập nhật state
 ---
 
 Đỗ Tấn Tường  
